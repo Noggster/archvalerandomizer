@@ -66,7 +66,7 @@ def randomizeSave(data):
 saveFiles = 11
 randomSave = str(random.randint(1, saveFiles))
 
-f = open('data/world' + randomSave + '.json')
+f = open('server/data/world' + randomSave + '.json')
 
 roomsObject = {}
 

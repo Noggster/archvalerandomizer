@@ -42,7 +42,9 @@ const app = {
 
 		if(download) {
 
-			download.addEventListener('click', () => {
+			download.addEventListener('click', (e) => {
+				e.preventDefault();
+				
 				fetch('https://archvalerandomizer.herokuapp.com')
 				.then(res => res.blob())
 				.then(blob => {
