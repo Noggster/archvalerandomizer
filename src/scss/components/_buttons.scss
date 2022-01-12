@@ -1,0 +1,315 @@
+.btn {
+
+	&__primary {
+
+		&--hover-state {
+
+			&:hover {
+
+			}			
+		}
+
+		&.disabled {
+			pointer-events: none;
+			opacity: 0.4;
+		}
+
+		&:hover {
+
+		}
+
+		&--icon {
+
+			img, svg {
+
+				path {
+
+				}
+			}
+		}
+
+		&--inverted {
+			
+			&:hover {
+
+			}
+
+			svg path {
+
+			}
+		}
+
+		&--large {
+			
+		}
+
+		&--small {
+			
+		}
+
+		&--rounded {
+			border-radius: 17px;
+		}
+
+		&--black {
+			background-color: #000;
+			color: #fff;
+			border: 1px solid #000;
+
+			&:hover {
+				color: #fff;
+			}
+
+			svg path {
+				fill: #fff;
+			}
+
+			&.btn__primary--icon {
+
+				&:hover {
+
+					svg path {
+						fill: #000;
+					}
+				}
+			}
+		}
+	}
+
+	&__action {
+
+		&--small {
+
+		}
+
+		&:hover {
+
+		}
+
+		&--filled {
+			
+		}
+
+		&--white {
+
+			&:hover {
+				
+			}
+		}
+	}
+
+	&__arrow {
+
+		img, svg {
+			
+		}
+	}
+}
+
+input {
+	
+	&[type="text"], &[type="number"] {
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding: 15px 0 15px 32px;
+
+		&::placeholder {
+			font-size: 12px;
+		}
+
+	}
+
+	&[type="number"] {
+		-moz-appearance: textfield !important;
+	}
+}
+
+.select-wrapper {
+
+	select {
+		width: 100%;
+		background-color: #fff;
+		font-size: 12px;
+		line-height: 16px;
+		appearance: none;
+		border: 1px solid #CECECE;
+		border-radius: 2px;
+		padding: 8px 20px;
+		position: relative;
+
+		&:after {
+			content: '';
+			display: block;
+		}
+	}
+}
+
+.checkbox-wrapper {
+
+	input[type="checkbox"] {
+		position: absolute; // take it out of document flow
+		opacity: 0; // hide it
+		width: 0 !important;
+		padding: 0 !important;
+
+		& + label {
+			position: relative;
+			cursor: pointer;
+			padding: 0;
+			
+			span {
+				font-size: 16px;
+				color: rgba(0, 0, 0, 0.5);
+				position: relative;
+				top: 10px;
+			}
+		}
+
+		// Box.
+		& + label:before {
+			content: '';
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: text-top;
+			width: 41px;
+			height: 41px;
+			background: white;
+		}
+
+		// Box hover
+		&:hover + label:before {
+			background: #fff;
+		}
+
+		// Box focus
+		&:focus + label:before {
+			box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+		}
+
+		// Box checked
+		&:checked + label:before {
+			background: #fff;
+		}
+
+		// Disabled state label.
+		&:disabled + label {
+			color: #b8b8b8;
+			cursor: auto;
+		}
+
+		// Disabled box.
+		&:disabled + label:before {
+			box-shadow: none;
+			background: #ddd;
+		}
+
+		// Checkmark. Could be replaced with an image
+		&:checked + label:after {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 20px;
+			background: white;
+			width: 2px;
+			height: 2px;
+			box-shadow: 
+			2px 0 0 #000,
+			4px 0 0 #000,
+			4px -2px 0 #000,
+			4px -4px 0 #000,
+			4px -6px 0 #000,
+			4px -8px 0 #000;
+			transform: rotate(45deg) scale(2.5);
+			background: none;
+			left: 6px;
+			top: 18px;
+		}
+	}
+}
+
+@include MQ(sm) {
+	
+}
+
+@include MQ(md) {
+	
+}
+
+@include MQ(md) {
+
+	.btn {
+
+		&__primary {
+			transition: 0.4s all;
+
+			&--large {
+				
+			}
+
+			&--small {
+
+			}
+
+			&--rounded {
+				border-radius: 17px;
+			}
+
+			&:hover {
+				
+			}
+
+			&--inverted {
+
+				&:hover {
+					
+				}
+			}
+		}
+
+		&__action {
+
+			&:hover {
+				
+			}
+		}
+	}
+
+	.checkbox-wrapper {
+		vertical-align: top;
+
+		input[type="checkbox"] {
+
+			// Box.
+			& + label:before {
+				margin-right: 5px;
+				width: 21px;
+				height: 21px;
+				display: block;
+			}
+
+			+ label {
+				width: 112px;
+
+				span {
+					top: 0;
+					font-size: 12px;
+					line-height: 14px;
+					padding: 0;
+					position: relative;
+					left: 30px;
+					top: -27px;
+				}
+			}
+		}
+	}
+
+	.checkbox-wrapper input[type="checkbox"]:checked + label:after {
+		left: 4px;
+		top: 10px;
+		transform: rotate(45deg) scale(1.2);
+	}
+}
+
+@include MQ(lg) {
+	
+}

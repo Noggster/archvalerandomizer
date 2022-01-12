@@ -1,0 +1,64 @@
+/**
+ * Fonts
+*/
+
+h1 {
+	font-size: 38px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 46px;
+}
+
+h2 {
+
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 39px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+h4 {
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+h6 {
+
+}
+
+p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@include MQ(sm) {
+	
+}
+
+@include MQ(md) {
+
+}
+
+@include MQ(lg) {
+	
+	h1 {
+		font-size: 80px;
+		line-height: 110%;
+	}
+}
+
+@include MQ(xl) {
+	
+}

@@ -1,0 +1,43 @@
+.main-footer, .main-footer--sticky-reveal {
+	position: static;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 80px 0 50px;
+	z-index: 0;
+	margin: 50px 0 0;
+
+	h1, h2, h3, h4, h5, h6, p, span, a {
+
+	}
+}
+
+@include MQ(sm) {
+	
+}
+
+@include MQ(md) {
+
+	.main-footer {
+
+		&--sticky-reveal {
+			position: sticky;
+			margin: 0;
+		}
+	}
+}
+
+@include MQ(lg) {
+	
+	.main-footer {
+		
+		&--sticky-reveal {
+			position: sticky;
+			margin: 0;
+		}
+	}
+}
+
+@include MQ(xl) {
+	
+}

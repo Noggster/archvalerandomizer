@@ -1,0 +1,53 @@
+/* Bootstrap */
+@import 'vendor/bootstrap/bootstrap';
+
+/* Import Hamburgers */
+@import 'vendor/hamburgers';
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Common styles */
+html {
+	scroll-behavior: smooth;
+}
+
+body, html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $content-font;
+}
+
+p strong, strong p, strong {
+	font-weight: 500;
+}
+
+em, p em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+}
+
+a {
+	color: #000;
+
+	&:hover {
+		color: #000;
+	}
+}
