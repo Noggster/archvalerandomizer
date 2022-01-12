@@ -38,6 +38,25 @@ const app = {
 		// Handles all logic needed for navigation
 		navHandler.init();
 
+		const download = document.querySelector('.js-generate-save');
+
+		if(download) {
+
+			download.addEventListener('click', () => {
+				fetch('http://localhost:2020')
+				.then(res => res.blob())
+				.then(blob => {
+					const url = window.URL.createObjectURL(blob);
+					const link = document.createElement('a');
+
+					link.href = url;
+					link.download = 'worldX.avsv';
+
+					link.click();
+				});
+			});
+		}
+
 		// Converts <img>-tags containing svg-files to inline <svg>
 		helperFuncs.convertSVG();
 	}

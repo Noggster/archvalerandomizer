@@ -1,9 +1,45 @@
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Archvale Randomizer</title>
+        <link rel="stylesheet" href="./dist/css/app.css">
     </head>
 
     <body>
-        Hi Github
+        <nav class="main-nav">
+            <a href="/">Home</a>
+        </nav>
+
+        <div class="help">
+            <a href="help.html">?</a>
+        </div>
+
+        <div class="page-wrapper vh-100">
+            <div class="container vh-100">
+                <div class="row vh-100 align-items-center">
+                    <div class="col-12">
+                        <h1>
+                            Archvale Randomizer
+                            <small>v.0.10</small>
+                        </h1>
+
+                        <div class="instructions">
+                            <p>
+                                How to:<br>
+                                1. Click the button below to trigger download of the save file.<br>
+                                2. Head over to %AppData%\AV_gms2_3<br>
+                                3. Copy over the new file into the folder, and rename it to 'worldX.avsv', where X indicated which save file that will be used.<br>
+                                4. Enjoy! :)
+                            </p>
+                        </div>
+
+                        <a href="#" class="btn btn--primary js-generate-save">Generate Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+
+    <script src="./dist/js/app.js"></script>
 </html>
