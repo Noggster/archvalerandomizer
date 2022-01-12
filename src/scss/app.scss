@@ -63,6 +63,7 @@ h1 small {
 	color:rgb(255, 200, 37);
 	display: block;
 	text-shadow: none;
+	padding-right: 30px;
 }
 
 a {
@@ -75,11 +76,15 @@ a {
 
 .page-wrapper {
 	text-align: center;
-	margin-top: -40px;
+	margin-top: -14px;
+
+	h1 {
+		width: 1050px;
+	}
 }
 
 .btn {
-	color: #fff;
+	color: #fff !important;
 	margin-top: 80px;
 	font-size: 22px;
 	background-color: transparent;
@@ -89,7 +94,7 @@ a {
 	transition: .4s all ease;
 
 	&:hover {
-		color: rgb(255, 200, 37);
+		color: rgb(255, 200, 37) !important;
 		border-color: rgb(255, 200, 37);
 		transform: translateY(-2px);
 	}
@@ -118,6 +123,10 @@ a {
 
 .main-nav {
 	padding: 20px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
 	a {
 		color: #fff !important;

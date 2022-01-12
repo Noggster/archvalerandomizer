@@ -7412,7 +7412,8 @@ h1 small {
   text-align: right;
   color: #ffc825;
   display: block;
-  text-shadow: none; }
+  text-shadow: none;
+  padding-right: 30px; }
 
 a {
   color: #000; }
@@ -7421,10 +7422,12 @@ a {
 
 .page-wrapper {
   text-align: center;
-  margin-top: -40px; }
+  margin-top: -14px; }
+  .page-wrapper h1 {
+    width: 1050px; }
 
 .btn {
-  color: #fff;
+  color: #fff !important;
   margin-top: 80px;
   font-size: 22px;
   background-color: transparent;
@@ -7433,7 +7436,7 @@ a {
   border: 4px solid #fff;
   transition: .4s all ease; }
   .btn:hover {
-    color: #ffc825;
+    color: #ffc825 !important;
     border-color: #ffc825;
     transform: translateY(-2px); }
 
@@ -7455,7 +7458,11 @@ a {
   display: none; }
 
 .main-nav {
-  padding: 20px; }
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
   .main-nav a {
     color: #fff !important; }
 
