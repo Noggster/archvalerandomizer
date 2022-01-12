@@ -7468,7 +7468,7 @@ a {
     .main-nav a:first-of-type {
       margin-left: 0; }
 
-@media (max-width: 600) {
+@media (max-width: 600px) {
   p {
     font-size: 14px;
     line-height: 22px; }
