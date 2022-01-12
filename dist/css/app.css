@@ -7390,6 +7390,7 @@ body, html {
 
 body {
   font-family: Nokia, Arial;
+  background: red;
   color: #fff;
   background: radial-gradient(circle, #344182 0%, #532954 100%); }
 
