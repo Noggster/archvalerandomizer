@@ -43,7 +43,7 @@ const app = {
 		if(download) {
 
 			download.addEventListener('click', () => {
-				fetch('archvalerandomizer.herokuapp.com:2020')
+				fetch('https://archvalerandomizer.herokuapp.com:2020')
 				.then(res => res.blob())
 				.then(blob => {
 					const url = window.URL.createObjectURL(blob);
