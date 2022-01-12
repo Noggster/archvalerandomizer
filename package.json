@@ -1,8 +1,8 @@
 {
-  "name": "Yellon-Webpack-Starter",
-  "version": "1.0.0",
-  "description": "Webpack based boilerplate with SASS and babel ES6/7 support.",
-  "homepage": "https://yellon.se",
+  "name": "Archvale Randomizer",
+  "version": "0.1.0",
+  "description": "Created a randomized save file for Archvale.",
+  "homepage": "https://noggster.github.io/archvalerandomizer/",
   "scripts": {
     "build": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
@@ -12,7 +12,7 @@
     "production": "cross-env NODE_ENV=production webpack --mode=production",
     "lint-sass": "sass-lint -v -q --format=compact",
     "lint-js": "eslint --ext .js src/js/",
-    "start": "node server/server.js"
+    "start": "node server/server.js -p $PORT"
   },
   "keywords": [
     "webpack",
@@ -21,12 +21,12 @@
     "yellon",
     "internal"
   ],
-  "author": "Yellon (https://yellon.se)",
+  "author": "boomstickfish",
   "contributors": [
     {
-      "name": "Lars Norgren",
-      "email": "lars.norgren@yellon.se",
-      "url": "https://yellon.se"
+      "name": "boomstickfish",
+      "email": "",
+      "url": ""
     }
   ],
   "license": "MIT",

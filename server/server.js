@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
     var item = []
 
-    exec('python parseData.py', (error, stdout, stderr) => {
+    exec('python server/parseData.py', (error, stdout, stderr) => {
         if(error) {
             console.log(error);
             return;
