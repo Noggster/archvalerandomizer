@@ -131,5 +131,10 @@ a {
 
 	a {
 		color: #fff !important;
+		margin-left: 24px;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
 	}
 }

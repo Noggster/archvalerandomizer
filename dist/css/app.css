@@ -7465,5 +7465,8 @@ a {
   left: 0;
   width: 100%; }
   .main-nav a {
-    color: #fff !important; }
+    color: #fff !important;
+    margin-left: 24px; }
+    .main-nav a:first-of-type {
+      margin-left: 0; }
 
