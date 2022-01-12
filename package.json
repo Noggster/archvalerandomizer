@@ -30,10 +30,14 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=10.13.0"
+    "node": "12.8.0"
   },
   "dependencies": {
     "autoprefixer": "^9.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "node-cmd": "^5.0.0",
+    "python-shell": "^3.0.1",
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
