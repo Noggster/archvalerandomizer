@@ -7468,3 +7468,11 @@ a {
     .main-nav a:first-of-type {
       margin-left: 0; }
 
+@media (max-width: 600) {
+  p {
+    font-size: 14px;
+    line-height: 22px; }
+  .instructions {
+    margin-top: 40px;
+    max-width: 100%; } }
+

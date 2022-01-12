@@ -138,3 +138,20 @@ a {
 		}
 	}
 }
+
+@media (max-width: 600) {
+
+	p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.instructions {
+		margin-top: 40px;
+		max-width: 100%;
+	}
+
+	h1 {
+
+	}
+}
