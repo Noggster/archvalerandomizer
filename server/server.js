@@ -5,6 +5,9 @@ const cors = require('cors');
 const spawn = require('child_process').spawn;
 const exec = require('child_process').exec
 
+const port = process.env.PORT || 3000
+const host = '0.0.0.0'
+
 
 const app = express();
 
@@ -41,6 +44,6 @@ app.get('/', (req, res) => {
     res.end(item.toString())*/
 });
 
-app.listen(2020, () => {
-    console.log('server is listening on port 2020');
+app.listen(port, host, () => {
+    console.log(`server is listening on port ${port}`);
 });
